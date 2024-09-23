@@ -76,10 +76,11 @@ for (let i = START; i <= END; i++) {
           sum += k * k;
       }
       const average = sum / j;
-      outerArray.push(average);
+      outerArray.push([average]); // Wrap the average in an array
   }
   deepThree.push(outerArray);
 }
+
 
 module.exports = {
   START,

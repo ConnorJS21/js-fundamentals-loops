@@ -49,11 +49,12 @@ let median = 0
 let sortedNums = nums.slice().sort((a, b) => a - b);
 if (sortedNums.length % 2 === 0) {
     let mid1 = sortedNums[sortedNums.length / 2 - 1];
-    let mid2 = sortedNums[sortedNums.length / 2];
-    median = (mid1 + mid2) / 2;
+    median = mid1;
 } else {
     median = sortedNums[Math.floor(sortedNums.length / 2)];
 }
+
+
 module.exports = {
   hasTen,
   indexOfTen,
